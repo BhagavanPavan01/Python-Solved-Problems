@@ -6,4 +6,8 @@ for i in range(len(nums)):
     if nums[j] > nums[i] :
         nums[i],nums[j] = nums[j],nums[i]
         j = j + 1
+        print(nums)
+        
+        
+        
 print(nums)
