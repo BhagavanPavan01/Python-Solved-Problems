@@ -48,7 +48,7 @@ print("After swap:", a, b)
 
 
 #
-#       2) Using third variable and operator  (a,b = b,a)
+# =========> 2) Using third variable and operator  (a,b = b,a)
 
 # a = int(input())
 
