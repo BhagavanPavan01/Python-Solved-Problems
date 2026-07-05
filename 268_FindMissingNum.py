@@ -31,6 +31,7 @@ Explanation:
             n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 
             8 is the missing number in the range since it does not appear in nums.'''
             
+
 #  ==========================  Brute force way =======================
 
 def BruteFindMissingNumber(n):
@@ -40,6 +41,8 @@ def BruteFindMissingNumber(n):
             return i
     return len(n)
 
+
+#  ==========================  Optimal way =======================
 
 def OptimalMissingNumber(nums):
     n = len(nums)
