@@ -13,8 +13,12 @@ def FindRowWithMaxSum (matrix):
             max_index = row
     return max_sum and max_index
 
+def Optimal_way(matrix):
+    max_row,max_sum = max(enumerate(map(sum,matrix)), key = lambda x:x[1])
+    print("max_sum", max_sum)
+    print("max_row",max_row)
 
 rows = int(input("Enter the length of rows :"))
 
 matrix = [list(map(int,input().split())) for _ in range(rows)]                     # ===== this input is take a matrix in optimal way
-print("Highest sum of row in matrix : ", FindRowWithMaxSum(matrix))
+print("Highest sum of row in matrix : ", Optimal_way(matrix))
