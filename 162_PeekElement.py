@@ -1,0 +1,21 @@
+# 
+
+# ================ Peak Element ======================
+
+def peakElement(nums):
+    n = len(nums)
+    
+    if n == 1:
+        return 0
+    if nums[0] > nums[1]:
+        return 0
+    if nums[n-1] > nums[n-2]:
+        return n-1
+    for i in range(1,n-1):
+        if nums[i] > nums[i-1] and nums[i] > nums[i+1]:
+            return i
+    return -1 
+    
+    
+nums = [10,1,3,100,50,5,2,30]
+print(peakElement(nums))
